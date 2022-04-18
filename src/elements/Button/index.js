@@ -6,6 +6,7 @@ export default function Button(props) {
   const className = [props.className];
   // * push class bootstrap ke komponen
   if (props.isPrimary) className.push("btn-primary");
+  if (props.isAccent) className.push("btn-accent");
   if (props.isLarge) className.push("btn-lg");
   if (props.isSmall) className.push("btn-sm");
   if (props.isBlock) className.push("btn-block");
@@ -80,10 +81,12 @@ Button.propTypes = {
   target: propTypes.string,
   className: propTypes.string,
   isExternal: propTypes.bool,
+  isPrimary: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
   hasShadow: propTypes.bool,
+  isAccent: propTypes.bool,
 };
