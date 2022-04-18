@@ -42,6 +42,7 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+@import "container-grid";
 
 :root {
   a {
@@ -91,4 +92,12 @@ header {
       }
     }
   }
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.card {
+  height: 100%;
 }
