@@ -10,7 +10,7 @@ import numberFormat from "../utiils/formatNumber";
 export default function Hero(props) {
   function showMostPicked() {
     window.scrollTo({
-      //   top: props.refMostPicked.current.offsetTop - 30,
+      top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
   }
@@ -26,9 +26,17 @@ export default function Hero(props) {
             </h1>
             <p>
               We provide what you need for your holiday. <br /> Time to make an
-              unforgetable moment. Your money can be returned,<br/>your time is not.
+              unforgetable moment. Your money can be returned,
+              <br />
+              your time is not.
             </p>
-            <Button style={{color: '#fff', marginTop: 15}} className="btn px-5" hasShadow isAccent onClick={showMostPicked}>
+            <Button
+              style={{ color: "#fff", marginTop: 15 }}
+              className="btn px-5"
+              hasShadow
+              isAccent
+              onClick={showMostPicked}
+            >
               Show Me Now
             </Button>
           </div>
@@ -87,8 +95,8 @@ export default function Hero(props) {
               src={ImageHero}
               alt="room-pict"
               className="img-fluid position-absolute"
-              style={{zIndex: 1}}
-              />
+              style={{ zIndex: 1 }}
+            />
             <img
               width={470}
               src={ImageFrame}
